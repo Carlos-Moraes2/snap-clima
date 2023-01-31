@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2ccdd5;
+    font-family: 'Inter', sans-serif;
+
+    /*torna a fonte mas bonita no navegador, melhorando os pixels, embora seja quase imperceptivel de se perceber*/
+    -webkit-font-smoothing: antialiased;
+
+    
+}
+
+.header {
+    
+}
