@@ -4,13 +4,16 @@
 }
 
 body {
-    background: #2ccdd5;
+    background: #d5e3e4;
     font-family: 'Inter', sans-serif;
 
     /*torna a fonte mas bonita no navegador, melhorando os pixels, embora seja quase imperceptivel de se perceber*/
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; 
+}
 
-    
+.header, .temperature-details, .sunset-sunrise {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -77,7 +80,6 @@ body {
 /* Current-temperature */
 
 .current-temperature {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +109,7 @@ body {
     margin-top: 10px;
 }
 
-/* botton container*/
+/* Botton container*/
 
 .botton-container {
     background: #fff;
@@ -119,3 +121,43 @@ body {
          rgba(0, 0, 0, 0.3,) 0px 1px 3px -1px;
 }
 
+.temperature-details {
+    display: flex;
+    margin-top: 30px;
+}
+
+.temperature-details__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #a2a2be;
+}
+
+.temperature-details__item:last-child {
+    border: none;
+}
+
+.temperature-details__label {
+    color: #a2a2be;
+}
+
+.temperature-details__value, 
+.sunset-sunrise__value {
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+/* sun */
+
+.sunset-sunrise {
+    display: flex;
+    margin-top: 30px auto;
+}
+
+.sunset-sunrise__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
